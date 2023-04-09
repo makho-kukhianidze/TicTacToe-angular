@@ -1,0 +1,157 @@
+.game-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.row{
+    display: flex;
+    margin: 12px;
+    max-width: 680px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    color: rgba(0, 0, 255, 0.644);
+}
+.square{
+    border: 3px solid #7437dfd8;
+    height: 220px;
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 146px;
+    font-family: cursive;
+    }
+.square:hover{
+    background-color: rgba(0, 0, 255, 0.281);
+    transition: 0.8s;
+}
+
+.player0{
+        color: rgb(72 57 179);
+}
+
+
+.player{
+    text-align: center;
+    font-size: 48px;
+    padding: 22px;
+    font-family: cursive;
+}
+
+.btn-reset{
+    padding: 12px;
+    border: none;
+    margin: 12px;
+    background-color: #6046eb;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.btn-reset:hover{
+    padding: 12px;
+    border: none;
+    margin: 12px;
+    background-color: #3f29b9;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .gradient-border {
+	 --border-width: 3px;
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-family: Lato, sans-serif;
+	 font-size: 2.5rem;
+	 text-transform: uppercase;
+	 color: white;
+	 border-radius: var(--border-width);
+}
+ .gradient-border::after {
+	 position: absolute;
+	 content: "";
+	 top: calc(-1 * var(--border-width));
+	 left: calc(-1 * var(--border-width));
+	 z-index: -1;
+	 width: calc(100% + var(--border-width) * 2);
+	 height: calc(100% + var(--border-width) * 2);
+	 background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #317dc4, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+	 background-size: 300% 300%;
+	 background-position: 0 50%;
+	 border-radius: calc(2 * var(--border-width));
+	 animation: moveGradient 4s alternate infinite;
+}
+ @keyframes moveGradient {
+	 50% {
+		 background-position: 100% 50%;
+	}
+}
+ 

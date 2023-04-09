@@ -1,0 +1,21 @@
+<div class="game-container ">
+    <div class="gam-eboard " style="text-align: center;">
+
+        <p class="player">
+          მოთამაშე:  {{player_turn}}
+        </p>
+        <div class="row gradient-border" style="padding: 12px;"> 
+            
+            <div *ngFor="let square of board; let i = index" (click)="handler(i)" [ngClass]="{'player0': square=='0'}" class="square "> {{square}}</div>
+
+
+          
+        </div>
+
+        <button class="btn-reset" (click)="reset()">თავიდან დაწყება</button>
+
+
+
+    </div>
+
+</div>
